@@ -1,4 +1,4 @@
-SparkleFormation.new(:sensu).load(:base, :compute, :in_a_vpc).overrides do
+SparkleFormation.new(:sensu_eval__sensu_stack).load(:base, :compute, :in_a_vpc).overrides do
   zone = registry!(:zones).first
   registry!(:official_amis, :sensu, :type => 'ebs')
   rabbitmq_password = ::SecureRandom.hex

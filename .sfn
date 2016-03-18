@@ -1,5 +1,5 @@
 Configuration.new do
-  packs = %w(aws-amis aws-availability-zones)
+  packs = %w(aws-amis aws-availability-zones aws-vpc)
   sparkle_pack packs.map { |p| "sparkle-pack-#{p}" }
   processing true
   options do
